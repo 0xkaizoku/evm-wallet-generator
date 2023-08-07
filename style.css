@@ -14,6 +14,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Add border around the container */
 }
 
 h1 {
@@ -32,6 +33,7 @@ button {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
+  border: 1px solid #007bff; /* Add border around the button */
 }
 
 button:hover {
@@ -53,7 +55,7 @@ strong {
   word-wrap: break-word;
   background-color: #f8f8f8;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* Add border around the key elements */
   border-radius: 5px;
   margin: 10px 0;
 }
