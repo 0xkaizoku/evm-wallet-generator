@@ -1,3 +1,6 @@
+
+//i'll start by here
+
 document.addEventListener('DOMContentLoaded', function () {
   const generateWalletButton = document.getElementById('generateWallet');
   generateWalletButton.addEventListener('click', generateWallet);
@@ -35,11 +38,11 @@ function copyToClipboard(event) {
   tempTextarea.setSelectionRange(0, 99999); // For mobile devices
 
   // Execute the copy command
-  document.execCommand('copy');
+  document.execCommand('copy'); //this is probably not supported in modern day browsers :/
 
   // Remove the temporary textarea
   document.body.removeChild(tempTextarea);
 
   // Show a copied message (optional)
-  alert('Copied to clipboard: ' + textToCopy);
+  alert('Copied to clipboard :) ' + textToCopy);
 }

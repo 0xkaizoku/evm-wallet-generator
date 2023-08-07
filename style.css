@@ -34,6 +34,7 @@ button {
   margin: 0 auto;
   margin-top: 30px;
   border: 1px solid #007bff; /* Add border around the button */
+  transition: background-color 0.2s ease-in-out; /* Add a smooth transition on hover */
 }
 
 button:hover {
@@ -58,4 +59,17 @@ strong {
   border: 1px solid #ccc; /* Add border around the key elements */
   border-radius: 5px;
   margin: 10px 0;
+  animation: pulsate 2s infinite; /* Add pulsating animation */
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

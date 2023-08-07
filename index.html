@@ -5,10 +5,15 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Simple Ethereum Wallet</h1>
-  <button id="generateWallet">Generate Wallet</button>
-  <p><strong>Public Key:</strong> <span id="publicKey"></span></p>
-  <p><strong>Private Key:</strong> <span id="privateKey"></span></p>
+  <div class="container">
+    <h1>Simple Ethereum Wallet</h1>
+    <p>This wallet is compatible with all EVM (Ethereum Virtual Machine) compatible chains.<br>Import the pvt key to any evm based wallet and enjoy :)</p>
+    <button id="generateWallet">Generate Wallet</button>
+    <p><strong>Public Key:</strong></p>
+    <p><span id="publicKey"></span></p>
+    <p><strong>Private Key:</strong></p>
+    <p><span id="privateKey"></span></p>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js"></script>
   <script src="wallet.js"></script>
