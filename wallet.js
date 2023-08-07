@@ -1,5 +1,5 @@
 
-//i'll start by here
+//i'll start here
 
 document.addEventListener('DOMContentLoaded', function () {
   const generateWalletButton = document.getElementById('generateWallet');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function generateWallet() {
-  // Generate a new Ethereum wallet using Web3.js
+  // Generating a new Ethereum wallet using Web3.js
   const web3 = new Web3();
   const wallet = web3.eth.accounts.create();
 
@@ -26,23 +26,22 @@ function generateWallet() {
 function copyToClipboard(event) {
   const textToCopy = event.target.textContent;
 
-  // Create a temporary textarea element and set its value to the text to copy
+
   const tempTextarea = document.createElement('textarea');
   tempTextarea.value = textToCopy;
 
-  // Append the textarea to the document to enable the copy command
   document.body.appendChild(tempTextarea);
 
-  // Select the text in the textarea
+
   tempTextarea.select();
-  tempTextarea.setSelectionRange(0, 99999); // For mobile devices
+  tempTextarea.setSelectionRange(0, 99999); 
 
   // Execute the copy command
-  document.execCommand('copy'); //this is probably not supported in modern day browsers :/
+  document.execCommand('copy'); //this probably not supported in modern day browsers :/
 
-  // Remove the temporary textarea
+
   document.body.removeChild(tempTextarea);
 
-  // Show a copied message (optional)
+
   alert('Copied to clipboard :) ' + textToCopy);
 }
